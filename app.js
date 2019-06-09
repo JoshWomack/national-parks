@@ -47,7 +47,7 @@ function getSearchParams() {
     const params = {
         stateCode: "",
         q: domObjects.searchTermInput.value,
-        limit: domObjects.maxResults.value
+        limit: domObjects.maxResults.value - 1
     };
     for (let i = 0; i < domObjects.stateInput.selectedOptions.length; i++) {
         params.stateCode += domObjects.stateInput.selectedOptions[i].value + ",";
